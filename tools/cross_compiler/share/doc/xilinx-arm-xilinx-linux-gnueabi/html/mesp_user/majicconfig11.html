@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <noscript>
+       <link rel="StyleSheet" href="../MGC/styles/body.css" type="text/css" />
+       <link rel="StyleSheet" href="../MGC/styles/catalog.css" type="text/css" />
+       <link rel="StyleSheet" href="../MGC/styles/document.css" type="text/css" />
+    </noscript>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="GENERATOR" content="Quadralay WebWorks AutoMap 2003 for FrameMaker 8.0.2.1385" />
+    <meta name="TEMPLATEBASE" content="mgc_ww_v3.2.203" />
+    <meta name="LASTUPDATED" content="Mon Feb 16 03:32:35 2015" />
+    <meta name="mgc_html_doctitle" content="Mentor Embedded Sourcery Probe User's Manual" />
+    <title>Register Definition File Creation</title>
+<!-- Search Engine keywords -->
+    <meta name="attributes" content=" product.version.2.5.0,doc.type.documentation.user,product.id.P11526 "/>
+<!-- JavaScript Files -->
+<script type="text/javascript" language="JavaScript1.2" src="../MGC/js/page.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+        if(DetectChromeForBasic()){
+           writeNoScriptStyles();
+        }
+
+     </script>
+   <script type="text/javascript" language="JavaScript1.2">
+     // Set reference to top level help frame
+      //
+      if(!DetectChromeForBasic()){
+        javascriptTopicRedirect();
+      }
+     </script>
+  </head>
+
+<body class="body" id="DocBody">
+<div id="BodyPopup" class="BodyPopup"></div>
+<div class="HideBody" id="HideBody">&nbsp;</div>
+<div id="bodycontent" class="BodyContent">
+
+
+
+
+
+  <script type="text/javascript" language="JavaScript1.2">
+  <!--
+      var BC = new Array("Sourcery Probe Configuration ","majicconfig01","Register Definition File","majicconfig10","Register Definition File Creation","majicconfig11","21");
+  // -->
+  </script>
+
+   <noscript><iframe framespacing="0" marginheight="2px" frameborder="no" scrolling="no" src="../MGC/html/noscript_header.htm" width="100%" height="100px;"></iframe>
+   </noscript>
+
+<script type="text/javascript" language="JavaScript1.2">
+if(DetectChromeForBasic()){
+       if(!(top.inEclipse)){  
+          writeBasicHeader();
+      }
+}
+</script>
+<div id="BodyContent">
+
+<a name="wp64073"></a><h1 class="pHeading3 FontLevel1" id="MGC64073">
+
+Register Definition File Creation
+</h1>
+<a name="wp64095"></a><p class="pzShortDesc">
+
+After preparing your target initialization script follow the procedure below to create and use register definition files for your custom hardware.
+</p>
+
+<a name="wp64454"></a><p class="pBody">
+
+See the <a href="majicconfig04.html"  onclick='oT("CRF","majicconfig04.html");return false;'>Sourcery Probe Target Initialization Scripts</a> section for details.
+</p>
+
+<a name="wp5417"></a><p class="pHTaskSubhead">
+
+Procedure
+</p>
+
+<a name="wp22884"></a>
+<ol start="1"><li class="LL1Seq">Import the template file, named <span class=" cItalic">template.rd, </span>into your project using <span class=" cBold">File &gt; Import... / General / File System</span>, in the same folder that contains your Sourcery Probe target initialization file. </li></ol>
+<table class="notes">
+  <tr class="NotesUpperRuleBlack">
+    <td class="NotesUpperRule" colspan='2'><span class="cNotesBlack">Note</span></td>
+  </tr>
+  <tr class="NotesNote">
+    <td class="NoteNote"></td>
+    <td valign="top">
+            
+<a name="wp34779"></a><p class="pnoteNote">
+
+        	It is recommended to rename the file to associate it with the hardware it describes.
+        </p>
+          </td>
+  </tr>
+  <tr class="NotesBottomRuleBlack">
+    <td class="NotesBottomRule" colspan='2'>&nbsp;</td>
+    </tr>
+ </table>
+<table class="notes">
+  <tr class="NotesUpperRuleBlack">
+    <td class="NotesUpperRule" colspan='2'><span class="cNotesBlack"></span><span>&nbsp;</span></td>
+  </tr>
+  <tr class="NotesNote">
+    <td class="NoteTip"></td>
+    <td valign="top">
+            
+<a name="wp28470"></a><p class="pnoteInfo">
+
+        <span class=" cBold">	Tip</span>: See <a name="EW21"></a><a href="majic_setup3.html#CRefID12259" onclick='oT("CRF","majic_setup3.html#CRefID12259");'><span class=" cLinkOverride">Table&#160;1-4</span></a> for default installation directory locations, then look in the <span class=" cItalic">tsp/_templates </span>subdirectory.
+        </p>
+          </td>
+  </tr>
+  <tr class="NotesBottomRuleBlack">
+    <td class="NotesBottomRule" colspan='2'>&nbsp;</td>
+    </tr>
+ </table>
+<a name="wp5427"></a>
+<ol start="2"><li class="LL1Seq">Add your register details with a text editor or with CodeBench, as described in <a href="majicconfig12.html"  onclick='oT("CRF","majicconfig12.html");return false;'>Register Definition File Format</a>.</li></ol>
+<a name="wp5428"></a>
+<ol start="3"><li class="LL1Seq">Add the following command to your custom initialization file to read your register definitions:</li></ol>
+<a name="wp5432"></a><pre class="pCode">
+      <span class=" cBold">fr rd</span> <span class=" cItalic">filename
+</span>
+</pre>
+
+<table class="notes">
+  <tr class="NotesUpperRuleBlack">
+    <td class="NotesUpperRule" colspan='2'><span class="cNotesBlack"></span><span>&nbsp;</span></td>
+  </tr>
+  <tr class="NotesNote">
+    <td class="NoteTip"></td>
+    <td valign="top">
+            
+<a name="wp17351"></a><p class="pnoteInfo">
+
+        <span class=" cBold">	Tip</span>: You can use the same technique to define &quot;debugger local&quot; register names and field breakdowns. In this case, the debugger allocates space for the register in its own local memory, rather than at a specified target register or memory address. One use for debugger local registers is to enable fields to be used with write-only hardware resources. This is for the case where the read-modify-write sequence occurs when a value is assigned to a register field that would not work with the real hardware. A debugger local register can be defined with the field breakdown. Because the fields can be assigned values individually, the whole register can be copied to the real target register in one operation.
+        </p>
+          </td>
+  </tr>
+  <tr class="NotesBottomRuleBlack">
+    <td class="NotesBottomRule" colspan='2'>&nbsp;</td>
+    </tr>
+ </table>
+
+
+
+
+
+</div>
+<!--BeginFooterContent-->
+<div class="BlankFooter" id="BlankFooter">&nbsp;</div>
+<div class="Footer" id="Footer">&nbsp;</div>
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+   DocHandle = "mesp_user";
+   DocTitle = "Mentor Embedded Sourcery Probe User's Manual";
+   PageTitle = "Register Definition File Creation";
+   Copyright = "2011-2015";
+   PDFLinkTitle = "Register.Definition.File.Creation"
+   ThisTopic = "RegisterDefinitionFileCreation";
+   CurrentFile = "majicconfig11.html";
+   CurrentFileID = "21";
+      topicFooter();
+
+ // -->
+ </script>
+ 
+ <noscript>
+    <p class="MGCFooter">Mentor Embedded Sourcery Probe User's Manual&nbsp;2.5.0
+    
+<br />2011-2015&#169;&nbsp;Mentor Graphics Corporation. All rights reserved.
+    
+<br /><a href='../mgc_html_help/nsmgchelp.htm' target="_blank">Browser Requirements</a></p>
+ </noscript>
+
+    </div>
+  </body>
+</html>
+
+ 

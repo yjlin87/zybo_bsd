@@ -1,0 +1,10 @@
+!SESSION 2017-08-30 15:51:41.911 -----------------------------------------------
+eclipse.buildId=2016.4
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Framework arguments:  -application com.xilinx.sdk.cmdline.service 40275
+Command-line arguments:  -os linux -ws gtk -arch x86_64 -application com.xilinx.sdk.cmdline.service 40275 -data /mnt/workspace/znsoc/Projects/zybo_base_system/zybo_bsd/sdk
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-08-30 15:51:43.312
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

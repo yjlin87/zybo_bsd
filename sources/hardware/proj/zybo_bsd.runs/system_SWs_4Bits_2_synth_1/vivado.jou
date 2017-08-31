@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Aug 30 19:24:43 2017
+# Process ID: 30953
+# Current directory: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_SWs_4Bits_2_synth_1
+# Command line: vivado -log system_SWs_4Bits_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_SWs_4Bits_2.tcl
+# Log file: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_SWs_4Bits_2_synth_1/system_SWs_4Bits_2.vds
+# Journal file: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_SWs_4Bits_2_synth_1/vivado.jou
+#-----------------------------------------------------------
+source system_SWs_4Bits_2.tcl -notrace

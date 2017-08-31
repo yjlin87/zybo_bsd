@@ -1,0 +1,153 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"><title>Appendix A. Sourcery CodeBench Lite Release Notes</title><link rel="stylesheet" type="text/css" href="cs.css"><meta name="generator" content="DocBook XSL Stylesheets V1.78.0"><meta name="description" content=" This appendix contains information about changes in this release of Sourcery CodeBench Lite for Xilinx EABI. You should read through these notes to learn about new features and bug fixes."><link rel="home" href="index.html" title="Sourcery&#8482; CodeBench Lite"><link rel="up" href="index.html" title="Sourcery&#8482; CodeBench Lite"><link rel="prev" href="ch07s02.html" title="7.2. Manuals for GNU Toolchain Components"><link rel="next" href="chap-license.html" title="Appendix B. Sourcery CodeBench Lite Licenses"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">Appendix A. Sourcery CodeBench Lite Release Notes</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch07s02.html">Prev</a> </td><th width="60%" align="center"> </th><td width="20%" align="right"> <a accesskey="n" href="chap-license.html">Next</a></td></tr></table><hr></div><div class="appendix"><div class="titlepage"><div><div><h1 class="title"><a name="chap-release"></a>Appendix A. Sourcery CodeBench Lite Release Notes</h1></div><div><div class="abstract"><p class="title"><b></b></p><p>
+     This appendix contains information about changes in this
+     release of Sourcery CodeBench Lite for Xilinx EABI.  You should read
+     through these notes to learn about new features and bug fixes.
+    </p></div></div></div></div><div class="toc"><p><b>Table of Contents</b></p><dl class="toc"><dt><span class="section"><a href="chap-release.html#sec-release-notes">A.1. Changes in Sourcery CodeBench Lite for Xilinx EABI</a></span></dt></dl></div><div class="section"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="sec-release-notes"></a>A.1. Changes in Sourcery CodeBench Lite for Xilinx EABI</h2></div></div></div><p>
+      This section documents Sourcery CodeBench Lite changes for each released revision.
+    </p><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm47262878799472"></a>A.1.1. Changes in Sourcery CodeBench Lite 2015.05-16</h3></div></div></div><p><b>Add declaration for <code class="function">__cs3_reset</code>. </b>
+	  The <code class="function">__cs3_reset</code> symbol is now defined in
+	  <code class="filename">cs3.h</code>, allowing
+	  applications to perform a soft reset without having to
+	  explicitly define that symbol.
+        </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm47262878788048"></a>A.1.2. Changes in Sourcery CodeBench Lite 2015.05-7</h3></div></div></div><p><b>Handling for <code class="type">long long</code> division by zero. </b>
+          A bug in GCC has been fixed that caused the <code class="type">long long</code>
+	  divide-by-zero handler <code class="function">__aeabi_ldiv0</code> to be
+	  invoked with the wrong argument when the numerator is in the
+	  range <code class="code">0x80000000LL</code> to <code class="code">0xffffffffLL</code>. 
+        </p><p><b>GCC version 4.9.2. </b>
+	  Sourcery CodeBench Lite for Xilinx EABI is now based on GCC
+	  version 4.9.2.  This update fixes a number of bugs; for
+	  details, see
+	  <code class="uri">http://gcc.gnu.org/gcc-4.9/changes.html</code>.
+        </p><p><b>Thumb call relocation bug fix. </b>
+	  An assembler bug has been fixed that caused Thumb calls
+	  to local functions in another section to jump to the wrong
+	  address.  This bug affected some C++ code emitted by the
+	  compiler.
+        </p><p><b>Memory corruption bug fix. </b>
+          A bug in support for long pathnames on Windows hosts has been
+	  fixed that could lead to memory corruption, causing potential crashes
+	  and unpredictable behavior.
+        </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm47262878758416"></a>A.1.3. Changes in Sourcery CodeBench Lite 2014.11-31</h3></div></div></div></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm47262878750832"></a>A.1.4. Changes in Sourcery CodeBench Lite 2014.11-18</h3></div></div></div><p><b>Long path support on Windows hosts. </b>
+          Sourcery CodeBench Lite on Microsoft Windows hosts now supports source
+          and object files with paths longer than 259 characters.
+          (These were already supported on GNU/Linux hosts.)
+        </p><p><b>Internal compiler error fix. </b>
+          GCC now issues a diagnostic instead of crashing with an
+          internal compiler error on code using <code class="code">register</code>
+          and <code class="code">asm</code> to assign variables to registers that
+          are reserved for special purposes (such as the program
+          counter) or are otherwise unsuitable for the type of the
+          variable.
+        </p><p><b>Internal compiler error fix. </b>
+          A bug in GCC has been fixed that sometimes caused internal
+          compiler errors in <code class="filename">var-tracking.c</code> when
+          compiling with optimization and debug information enabled.
+        </p><p><b>GCC version 4.9.1. </b>
+	  Sourcery CodeBench Lite for Xilinx EABI is now based on GCC
+	  version 4.9.1. For more information about changes from GCC
+	  version 4.8 that was included in previous releases, see
+	  <code class="uri">http://gcc.gnu.org/gcc-4.9/changes.html</code>.
+        </p><p><b>Fix for debug information bug. </b>
+          A bug has been fixed that caused errors in the GNU binary
+          utilities, such as running out of memory during linking or
+          displaying incorrect section sizes in objdump.  The bug was
+          triggered by objects containing uncompressed debug information
+          for symbols whose names start with <code class="literal">ZLIB</code>. 
+        </p><p><b>Thumb-2 PLT entry support. </b>
+          The linker now generates correct PLT entries for Thumb-2-only
+          targets.
+        </p><p><b>CS3 linker script bug fix. </b>
+	  A bug in CS3 has been fixed that caused linker scripts
+	  for some targets to assign data associated with the
+	  <code class="option">--build-id</code> linker option to
+	  inappropriate memory regions, such as boot ROM.
+        </p><p><b>CS3 semihosting improvements. </b>
+	  CS3 now provides a linker option to speed semihosting
+	  startup for programs intended to be run from GDB.
+	  For details, see <a class="xref" href="chap-cs3.html#sec-cs3-semihosting" title="5.1.2. Hosting and Semihosting">Section 5.1.2, &#8220;Hosting and Semihosting&#8221;</a>.
+        </p><p><b>Newlib update. </b>
+          The Newlib package has been updated to version 2.1.0, with
+          additions from the community CVS trunk as of 2014-06-03.
+        </p><p><b>GDB reverse debugging bug fix. </b>
+          A bug has been fixed that caused GDB to corrupt registers
+	  and memory contents when moving backwards through some
+	  load/store instructions.
+        </p><p><b>Restore terminal echo when Sprite exits. </b>
+	  The Sourcery CodeBench Debug Sprite on GNU/Linux hosts now always
+	  restores terminal echo when exiting.
+        </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm47262878685136"></a>A.1.5. Changes in Sourcery CodeBench Lite 2014.05-22</h3></div></div></div><p><b>GCC version 4.8.3 prerelease. </b>
+	  Sourcery CodeBench Lite for Xilinx EABI is now based on a GCC 4.8.3
+          prerelease snapshot from Mar 20th, 2014, SVN revision 208690.
+          This version includes numerous other bug fixes.  For more
+          information about changes from GCC version 4.8.1 that was
+          included in previous releases, see
+          <code class="uri">http://gcc.gnu.org/gcc-4.8/changes.html</code>.
+	</p><p><b>Instrumentation bug fix. </b>
+          A bug that caused GCC to instrument functions tagged with
+          <code class="literal">__attribute__((no_instrument_function))</code>
+          when compiling with <code class="option">-fprofile-arcs</code> has been
+          fixed.
+        </p><p><b><code class="option">-Weffc++</code> and <code class="option">-Wnon-virtual-dtor</code> interaction. </b>
+          The two C++ warning options <code class="option">-Weffc++</code> and
+	  <code class="option">-Wnon-virtual-dtor</code> have been updated to
+	  interoperate correctly and warn about the lack of
+	  virtual destructors only in polymorphic classes.
+        </p><p><b>Binutils update. </b>
+          The binutils package has been updated to version
+          2.24.51.20140217 from the FSF trunk, git revision
+          024a23103f04282872d4352302b1bfe04391a7a4.  This update
+          includes numerous bug fixes.
+        </p><p><b>Fix for <code class="function">sbrk</code>. </b>
+          A bug in CS3 that caused <code class="function">sbrk</code> to fail on
+	  targets with more than 2GB of RAM has been fixed.
+        </p><p><b>GDB update. </b>
+	  The version of GDB has been updated to 7.7.50-cvs, git
+	  revision 024a23103f04282872d4352302b1bfe04391a7a4.
+	  This update adds numerous bug fixes and features.  Refer
+	  to <code class="uri">http://www.gnu.org/software/gdb/news</code> for
+	  more information.
+	</p><p><b>GDB memory manipulation fix. </b>
+          A bug has been fixed that caused GDB to read incorrect
+	  contents from breakpoint addresses, leading to unpredictable
+	  behavior and erroneous backtraces.
+        </p><p><b>Fix for GDB crashes. </b>
+          GDB has been made more robust to handle executables with
+          incorrect DWARF-2 <code class="literal">.debug_line</code> information.
+          Previously, GDB crashed on programs that referenced missing
+          include directory information.
+        </p><p><b>GDB packet warning fix. </b>
+          A bug has been fixed that formerly caused GDB to display an
+          invalid packet warning after interrupting applications
+          using semihosted I/O.
+        </p><p><b>Installer help. </b>
+          The installer now displays help on Microsoft Windows hosts when
+          invoked from the command line with the <code class="option">--help</code>
+          option.  Formerly, this command-line option only worked on GNU/Linux
+          hosts.
+        </p><p><b>Installer error dialog. </b>
+          On Microsoft Windows hosts the installer now displays an error 
+          dialog during a GUI installation if a fatal error occurs.
+        </p><p><b>Installer logging improved. </b>
+          The installer now logs information related to the 
+          progress of the installation  and also errors when 
+          it fails to start.
+        </p><p><b>Installer 32-bit library detection. </b>
+          The installer checks for required 32-bit compatibility 
+          libraries on supported 64-bit GNU/Linux hosts.
+        </p><p><b>Installer disk space calculation. </b>
+        The installer for GNU/Linux hosts now correctly 
+        calculates the temporary disk space required.
+        </p><p><b>Installer temp path. </b>
+          The installer now allows you to change the directory where
+          it is extracted using the <code class="envar">P2_INSTALLER_TEMP_PATH</code> 
+          environment variable. See <a class="xref" href="sec-installing.html" title="2.5. Installing Sourcery CodeBench Lite">Section 2.5, &#8220;Installing Sourcery CodeBench Lite&#8221;</a>.
+        </p><p><b>Microsoft Windows XP host no longer supported. </b>
+          The minimum required Microsoft Windows OS needed to run
+          Sourcery CodeBench Lite is now Windows Vista.
+        </p></div><div class="section"><div class="titlepage"><div><div><h3 class="title"><a name="idm47262878592464"></a>A.1.6. Changes in Older Releases</h3></div></div></div><p>
+        For information about changes in older releases of
+	Sourcery CodeBench Lite for Xilinx EABI, 
+	please refer to the Getting Started guide packaged with those
+	releases.
+      </p></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch07s02.html">Prev</a> </td><td width="20%" align="center"> </td><td width="40%" align="right"> <a accesskey="n" href="chap-license.html">Next</a></td></tr><tr><td width="40%" align="left" valign="top">7.2. Manuals for GNU Toolchain Components </td><td width="20%" align="center"><a accesskey="h" href="index.html">Home</a></td><td width="40%" align="right" valign="top"> Appendix B. Sourcery CodeBench Lite Licenses</td></tr></table></div></body></html>

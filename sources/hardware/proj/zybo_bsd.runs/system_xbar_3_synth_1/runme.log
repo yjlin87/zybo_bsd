@@ -1,0 +1,116 @@
+
+*** Running vivado
+    with args -log system_xbar_3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_xbar_3.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source system_xbar_3.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1082.711 ; gain = 163.762 ; free physical = 137 ; free virtual = 15426
+INFO: [Synth 8-638] synthesizing module 'system_xbar_3' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ip/system_xbar_3/synth/system_xbar_3.v:59]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_axi_crossbar' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_crossbar' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_si_transactor' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_decoder' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (1#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:62]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (2#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2133]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_decoder' (3#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_10_axic_srl_fifo' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_10_ndeep_srl' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-638] synthesizing module 'SRLC32E' [/mnt/workspace/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-256] done synthesizing module 'SRLC32E' (4#1) [/mnt/workspace/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:43478]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_10_ndeep_srl' (5#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_10_axic_srl_fifo' (6#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (7#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_si_transactor' (8#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_si_transactor__parameterized0' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_si_transactor__parameterized0' (8#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3798]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_decoder__parameterized0' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_decoder__parameterized0' (8#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (9#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:60]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice' (10#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized0' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized0' (10#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized1' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized1' (10#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized2' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized2' (10#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (11#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7e3a/hdl/axi_infrastructure_v1_1_vl_rfs.v:474]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice' (12#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_decoder__parameterized1' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_decoder__parameterized1' (12#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_decoder__parameterized2' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_decoder__parameterized2' (12#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:794]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_10_axic_srl_fifo__parameterized0' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_10_axic_srl_fifo__parameterized0' (12#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:698]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_wdata_mux' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4559]
+INFO: [Synth 8-638] synthesizing module 'axi_data_fifo_v2_1_10_axic_reg_srl_fifo' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-256] done synthesizing module 'axi_data_fifo_v2_1_10_axic_reg_srl_fifo' (13#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/39ba/hdl/axi_data_fifo_v2_1_vl_rfs.v:889]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (13#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_wdata_mux' (14#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4559]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice__parameterized0' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized3' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized3' (14#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized4' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized4' (14#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-638] synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized5' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axic_register_slice__parameterized5' (14#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:85]
+INFO: [Synth 8-256] done synthesizing module 'axi_register_slice_v2_1_11_axi_register_slice__parameterized0' (14#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/0b6b/hdl/axi_register_slice_v2_1_vl_rfs.v:791]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_decerr_slave' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_decerr_slave' (15#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_addr_arbiter' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:423]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized1' (15#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-638] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized2' (15#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/7ee0/hdl/generic_baseblocks_v2_1_vl_rfs.v:2452]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_addr_arbiter' (16#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:423]
+INFO: [Synth 8-638] synthesizing module 'axi_crossbar_v2_1_12_splitter' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_splitter' (17#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4459]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_crossbar' (18#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:2239]
+INFO: [Synth 8-256] done synthesizing module 'axi_crossbar_v2_1_12_axi_crossbar' (19#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/896d/hdl/axi_crossbar_v2_1_vl_rfs.v:4882]
+INFO: [Synth 8-256] done synthesizing module 'system_xbar_3' (20#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ip/system_xbar_3/synth/system_xbar_3.v:59]
+Finished RTL Elaboration : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1205.188 ; gain = 286.238 ; free physical = 129 ; free virtual = 14694
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1205.188 ; gain = 286.238 ; free physical = 131 ; free virtual = 14677
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.12 . Memory (MB): peak = 1461.215 ; gain = 0.004 ; free physical = 193 ; free virtual = 14084
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 156 ; free virtual = 14053
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 156 ; free virtual = 14053
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 156 ; free virtual = 14053
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 130 ; free virtual = 14027
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:43 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 123 ; free virtual = 13992
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 1943 ; free virtual = 15651
+Finished Timing Optimization : Time (s): cpu = 00:00:57 ; elapsed = 00:00:58 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 1881 ; free virtual = 15593
+Finished Technology Mapping : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 1871 ; free virtual = 15583
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 1865 ; free virtual = 15577
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 1865 ; free virtual = 15577
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 1863 ; free virtual = 15576
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 1863 ; free virtual = 15576
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 1861 ; free virtual = 15575
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 1861 ; free virtual = 15574
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     3|
+|2     |LUT2 |   138|
+|3     |LUT3 |   139|
+|4     |LUT4 |    21|
+|5     |LUT5 |    19|
+|6     |LUT6 |    32|
+|7     |FDRE |   246|
+|8     |FDSE |     2|
++------+-----+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1461.215 ; gain = 542.266 ; free physical = 1861 ; free virtual = 15574
+synth_design: Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1469.223 ; gain = 478.090 ; free physical = 1688 ; free virtual = 15417

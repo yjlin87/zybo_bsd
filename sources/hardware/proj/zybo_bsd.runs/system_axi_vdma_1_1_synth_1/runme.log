@@ -1,0 +1,229 @@
+
+*** Running vivado
+    with args -log system_axi_vdma_1_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_vdma_1_1.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+  **** IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source system_axi_vdma_1_1.tcl -notrace
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1080.031 ; gain = 161.086 ; free physical = 2013 ; free virtual = 15584
+INFO: [Synth 8-638] synthesizing module 'system_axi_vdma_1_1' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ip/system_axi_vdma_1_1/synth/system_axi_vdma_1_1.vhd:113]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:69480]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_rst_module' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:16457]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reset' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:14862]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (1#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (1#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (1#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized2' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized2' (1#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized3' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized3' (1#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized4' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized4' (1#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized5' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized5' (1#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reset' (2#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:14862]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_rst_module' (3#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:16457]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_if' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:39644]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_lite_if' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:16952]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized6' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized6' (3#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_lite_if' (4#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:16952]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized7' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized7' (4#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_if' (5#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:39644]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_intrpt' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:40370]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_intrpt' (6#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:40370]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_module' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:38829]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_register' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:18712]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_register' (7#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:18712]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_regdirect' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:20526]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_regdirect' (8#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:20526]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_mux' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:29591]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_mux' (9#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:29591]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_module' (10#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:38829]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_mngr' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:63815]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sm' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:61558]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sm' (11#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:61558]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_cmdsts_if' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:62697]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_cmdsts_if' (12#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:62697]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sts_mngr' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:63204]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sts_mngr' (13#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:63204]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vidreg_module' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:55739]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vregister' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:53625]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vregister' (14#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:53625]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vaddrreg_mux' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:55216]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vaddrreg_mux' (15#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:55216]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vidreg_module' (16#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:55739]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mngr' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:58282]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_greycoder' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:57995]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_greycoder' (17#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:57995]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mux' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:57020]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mux' (18#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:57020]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_greycoder__parameterized0' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:57995]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_greycoder__parameterized0' (18#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:57995]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mngr' (19#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:58282]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mngr' (20#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:63815]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_fsync_gen' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:52754]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_fsync_gen' (21#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:52754]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vid_cdc' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:13249]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized8' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized8' (21#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized9' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized9' (21#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized10' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized10' (21#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized11' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized11' (21#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized12' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized12' (21#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized13' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized13' (21#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vid_cdc' (22#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:13249]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sof_gen' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:40980]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sof_gen' (23#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:40980]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_mm2s_linebuf' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:45948]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_afifo' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:44432]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_afifo' (52#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:44432]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_skid_buf' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:41227]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_skid_buf' (53#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:41227]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized14' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized14' (53#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized15' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized15' (53#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized16' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized16' (53#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized17' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized17' (53#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized18' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized18' (53#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized19' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized19' (53#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized20' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized20' (53#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized21' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized21' (53#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/52cb/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mm2s_linebuf' (54#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:45948]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:48516]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:46666]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (55#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:2693]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (56#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (57#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (58#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (59#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (60#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (60#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (60#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (60#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (60#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (61#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:2693]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_status_cntl' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:13741]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_status_cntl' (62#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:13741]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:7411]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (63#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized0' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized0' (63#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:4337]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc' (64#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:7411]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:9995]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized1' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (64#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (64#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (64#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (64#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (65#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:9995]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:12180]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rdmux' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:10676]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rdmux' (66#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:10676]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized2' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized2' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized2' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized2' (66#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized2' (66#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized2' (66#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (66#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rddata_cntl' (67#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:12180]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_sf' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:20200]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized3' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized3' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized3' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized3' (67#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized3' (67#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized3' (67#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/6039/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (67#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:1881]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:1294]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/5ab6/hdl/lib_fifo_v1_0_rfs.vhd:2097]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg' (74#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/5ab6/hdl/lib_fifo_v1_0_rfs.vhd:2097]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord' (75#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:1294]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_sf' (76#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:20200]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (77#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:46666]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_omit_wrap' [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:42721]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_omit_wrap' (78#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:42721]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (79#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/bf41/hdl/axi_datamover_v5_1_vh_rfs.vhd:48516]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma' (80#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ipshared/ed72/hdl/axi_vdma_v6_2_rfs.vhd:69480]
+INFO: [Synth 8-256] done synthesizing module 'system_axi_vdma_1_1' (81#1) [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/ip/system_axi_vdma_1_1/synth/system_axi_vdma_1_1.vhd:113]
+Finished RTL Elaboration : Time (s): cpu = 00:04:03 ; elapsed = 00:04:03 . Memory (MB): peak = 1357.277 ; gain = 438.332 ; free physical = 2814 ; free virtual = 16370
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:04:03 ; elapsed = 00:04:04 . Memory (MB): peak = 1357.277 ; gain = 438.332 ; free physical = 2814 ; free virtual = 16370
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.04 . Memory (MB): peak = 1506.301 ; gain = 1.000 ; free physical = 2462 ; free virtual = 16043
+Finished Constraint Validation : Time (s): cpu = 00:04:14 ; elapsed = 00:04:14 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3403 ; free virtual = 16994
+Finished Loading Part and Timing Information : Time (s): cpu = 00:04:14 ; elapsed = 00:04:14 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3403 ; free virtual = 16994
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:04:14 ; elapsed = 00:04:15 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3403 ; free virtual = 16994
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:04:17 ; elapsed = 00:04:18 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3365 ; free virtual = 16989
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:22 ; elapsed = 00:04:23 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3335 ; free virtual = 16958
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:29 ; elapsed = 00:04:30 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3331 ; free virtual = 16954
+Finished Timing Optimization : Time (s): cpu = 00:04:32 ; elapsed = 00:04:33 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3288 ; free virtual = 16911
+Finished Technology Mapping : Time (s): cpu = 00:04:33 ; elapsed = 00:04:34 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3279 ; free virtual = 16902
+Finished IO Insertion : Time (s): cpu = 00:04:33 ; elapsed = 00:04:34 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3279 ; free virtual = 16902
+Finished Renaming Generated Instances : Time (s): cpu = 00:04:33 ; elapsed = 00:04:34 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3279 ; free virtual = 16902
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:04:34 ; elapsed = 00:04:35 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3279 ; free virtual = 16902
+Finished Renaming Generated Ports : Time (s): cpu = 00:04:34 ; elapsed = 00:04:35 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3279 ; free virtual = 16902
+Finished Handling Custom Attributes : Time (s): cpu = 00:04:34 ; elapsed = 00:04:35 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3279 ; free virtual = 16902
+Finished Renaming Generated Nets : Time (s): cpu = 00:04:34 ; elapsed = 00:04:35 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3279 ; free virtual = 16902
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY4     |    41|
+|2     |LUT1       |   189|
+|3     |LUT2       |   215|
+|4     |LUT3       |   234|
+|5     |LUT4       |   229|
+|6     |LUT5       |   236|
+|7     |LUT6       |   294|
+|8     |MUXCY      |    24|
+|9     |MUXF7      |     5|
+|10    |RAMB36E1   |     1|
+|11    |RAMB36E1_1 |     2|
+|12    |SRL16E     |   104|
+|13    |FDCE       |   144|
+|14    |FDPE       |    21|
+|15    |FDR        |   186|
+|16    |FDRE       |  1466|
+|17    |FDSE       |    59|
++------+-----------+------+
+Finished Writing Synthesis Report : Time (s): cpu = 00:04:34 ; elapsed = 00:04:35 . Memory (MB): peak = 1506.301 ; gain = 587.355 ; free physical = 3279 ; free virtual = 16902
+synth_design: Time (s): cpu = 00:04:32 ; elapsed = 00:04:32 . Memory (MB): peak = 1959.492 ; gain = 969.043 ; free physical = 2983 ; free virtual = 16607

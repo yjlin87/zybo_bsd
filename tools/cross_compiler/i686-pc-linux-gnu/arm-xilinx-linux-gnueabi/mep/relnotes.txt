@@ -1,0 +1,51 @@
+     Mentor Embedded Soucery Probe (MESP) Release Notes
+
+========================================================================
+(c) Copyright 2013 Mentor Graphics Corp.  All rights reserved.
+
+
+CONTENTS
+=======================================
+
+  Introduction
+  Product Version Numbers
+
+
+INTRODUCTION
+=======================================
+
+This release notes file documents last minute product changes,
+product version numbers, and usage of the sample program files.
+
+Below is the sturcture of these installation tree.
+
+<install>\<host>\bin            Executables, dll's, command files, etc
+<install>\<host>\mdi\           mdi interface details
+<install>\<host>\inf            Windows "inf" files for Sourcery Personal support
+<install>\<host>\mep_firmware   Firmware for Mentor Embeddded Sourcery Personal
+                                and Pro Probes
+<install>\<host>\tsp            Target initializtion files and templates
+
+<host> is either linux or win32 depending upon your host environment.
+
+Note that the inf directory is for Windows hosts only.
+
+
+PRODUCT VERSION NUMBERS
+=======================================
+
+    Debugger Libraries and Executables Versions:
+
+      MON                          V7.0.25
+      MESP MDILib (MDI 1.4 API)    V2.0.24
+      MESP UpdateLib               V1.14
+
+    Sourcery Probe Firmware:       V2.5.3 Build 0
+    (all models)
+
+
+
+
+
+
+

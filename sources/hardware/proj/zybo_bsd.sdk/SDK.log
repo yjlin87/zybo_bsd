@@ -1,0 +1,10 @@
+19:46:44 INFO  : Registering command handlers for SDK TCF services
+19:46:45 INFO  : Launching XSCT server: xsct -n -interactive /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.sdk/temp_xsdb_launch_script.tcl
+19:46:49 INFO  : XSCT server has started successfully.
+19:46:49 INFO  : Successfully done setting XSCT server connection channel  
+19:47:01 INFO  : Successfully done setting SDK workspace  
+19:47:01 INFO  : Processing command line option -hwspec /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.sdk/system_wrapper.hdf.
+19:50:35 ERROR : (XSDB Server)/mnt/workspace/Xilinx/SDK/2016.4/bin/loader: line 179:  4095 Segmentation fault      "$RDI_PROG" "$@"
+
+19:50:35 INFO  : Launching XSCT server: xsct -n -interactive /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.sdk/temp_xsdb_launch_script.tcl
+19:50:36 INFO  : XSCT server has started successfully.

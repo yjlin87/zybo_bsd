@@ -1,0 +1,539 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <noscript>
+       <link rel="StyleSheet" href="../MGC/styles/body.css" type="text/css" />
+       <link rel="StyleSheet" href="../MGC/styles/catalog.css" type="text/css" />
+       <link rel="StyleSheet" href="../MGC/styles/document.css" type="text/css" />
+    </noscript>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <meta name="GENERATOR" content="Quadralay WebWorks AutoMap 2003 for FrameMaker 8.0.2.1385" />
+    <meta name="TEMPLATEBASE" content="mgc_ww_v3.2.203" />
+    <meta name="LASTUPDATED" content="Mon Feb 16 03:32:35 2015" />
+    <meta name="mgc_html_doctitle" content="Mentor Embedded Sourcery Probe User's Manual" />
+    <title>Register Definition File Format</title>
+<!-- Search Engine keywords -->
+    <meta name="attributes" content=" product.version.2.5.0,doc.type.documentation.user,product.id.P11526 "/>
+<!-- JavaScript Files -->
+<script type="text/javascript" language="JavaScript1.2" src="../MGC/js/page.js"></script>
+<script type="text/javascript" language="JavaScript1.2">
+        if(DetectChromeForBasic()){
+           writeNoScriptStyles();
+        }
+
+     </script>
+   <script type="text/javascript" language="JavaScript1.2">
+     // Set reference to top level help frame
+      //
+      if(!DetectChromeForBasic()){
+        javascriptTopicRedirect();
+      }
+     </script>
+  </head>
+
+<body class="body" id="DocBody">
+<div id="BodyPopup" class="BodyPopup"></div>
+<div class="HideBody" id="HideBody">&nbsp;</div>
+<div id="bodycontent" class="BodyContent">
+
+
+
+
+
+  <script type="text/javascript" language="JavaScript1.2">
+  <!--
+      var BC = new Array("Sourcery Probe Configuration ","majicconfig01","Register Definition File","majicconfig10","Register Definition File Format","majicconfig12","22");
+  // -->
+  </script>
+
+   <noscript><iframe framespacing="0" marginheight="2px" frameborder="no" scrolling="no" src="../MGC/html/noscript_header.htm" width="100%" height="100px;"></iframe>
+   </noscript>
+
+<script type="text/javascript" language="JavaScript1.2">
+if(DetectChromeForBasic()){
+       if(!(top.inEclipse)){  
+          writeBasicHeader();
+      }
+}
+</script>
+<div id="BodyContent">
+
+<a name="wp5437"></a><h1 class="pHeading3 FontLevel1" id="MGC5437">
+
+<a name="CRefID29005"></a>
+Register Definition File Format
+</h1>
+<a name="wp5438"></a><p class="pzShortDesc">
+
+Define new register names using the following syntax:
+</p>
+
+<a name="wp5439"></a><pre class="pCode">
+REG = reg_name [offset space_name] byte_size [SEQ first last
+      obj_inc [inc]]
+</pre>
+
+<a name="wp18523"></a><pre class="pCode">
+
+</pre>
+
+<a name="wp5479"></a><p class="pBody">
+
+
+</p>
+<div id="TableDivQz"></div>
+<div align="center">
+
+
+<a name="wp18361"></a><p class="pTableTitle" id="MGC18361">
+
+Table 3-4. <a name="CRefID91817"></a>
+Variable Descriptions&#160;
+</p>
+
+
+<table border="1" cellpadding="5" cellspacing="0" id="wp18361table18359">
+  <tr bgcolor="#CCCCCC"  align="center" valign="middle">
+    <th>
+
+<a name="wp18365"></a><p class="pTableHeading" id="MGC18361">
+Variable Name
+</p>
+</th>
+
+    <th>
+
+<a name="wp18367"></a><p class="pTableHeading">
+
+Description
+</p>
+</th>
+
+
+</tr>
+
+  <tr align="left" valign="top">
+    <td id='Row2Column1'  style='width:1.19444in'>
+
+
+<a name="wp18369"></a><p class="pTableCell">
+<span class=" cItalic">reg_name</span></p></td>
+
+    <td id='Row2Column2'  style='width:5.29863in'>
+
+
+<a name="wp18371"></a><p class="pTableCell">
+Identifier giving the name of the register being defined.</p>
+<a name="wp18505"></a><p class="pTableCell">
+If the name begins with &#8216;$&#8217;, it defines a &ldquo;debugger local&rdquo; register and the offset and the space_name are omitted.</p></td>
+
+
+</tr>
+
+  <tr align="left" valign="top">
+    <td id='Row3Column1' >
+
+
+<a name="wp18373"></a><p class="pTableCell">
+<span class=" cItalic">offset</span></p></td>
+
+    <td id='Row3Column2' >
+
+
+<a name="wp18375"></a><p class="pTableCell">
+Decimal number giving the register&#8217;s byte offset within the specified space. For real register spaces, the offset is the register number times the register size. For memory spaces, the offset is the byte address.</p></td>
+
+
+</tr>
+
+  <tr align="left" valign="top">
+    <td id='Row4Column1' >
+
+
+<a name="wp18377"></a><p class="pTableCell">
+<span class=" cItalic">space_name</span></p></td>
+
+    <td id='Row4Column2' >
+
+
+<a name="wp18379"></a><p class="pTableCell">
+One of the keywords from the following list giving the register file or memory space for the register. See <a href="majicconfig13.html#wp36181"  onclick='oT("CRF","majicconfig13.html#wp36181");return false;'>Table&#160;3-6</a> and <a href="majicconfig13.html#wp36684"  onclick='oT("CRF","majicconfig13.html#wp36684");return false;'>Table&#160;3-7</a>.</p></td>
+
+
+</tr>
+
+  <tr align="left" valign="top">
+    <td id='Row5Column1' >
+
+
+<a name="wp18381"></a><p class="pTableCell">
+<span class=" cItalic">byte_size</span></p></td>
+
+    <td id='Row5Column2' >
+
+
+<a name="wp18383"></a><p class="pTableCell">
+Size of the register in bytes (1, 2, 4. or 8).</p></td>
+
+
+</tr>
+
+  <tr align="left" valign="top">
+    <td id='Row6Column1' >
+
+
+<a name="wp18385"></a><p class="pTableCell">
+<span class=" cItalic"><a name="CRefID89637"></a>first</span></p></td>
+
+    <td id='Row6Column2' >
+
+
+<a name="wp18387"></a><p class="pTableCell">
+Decimal number giving the first value to append to reg_name to form a sequence of names.</p>
+<a name="wp18506"></a><p class="pTableCell">
+Sequences make it easy to represent a consecutive set of like-named registers (for example, r0..r31).</p></td>
+
+
+</tr>
+
+  <tr align="left" valign="top">
+    <td id='Row7Column1' >
+
+
+<a name="wp18389"></a><p class="pTableCell">
+<span class=" cItalic">last</span></p></td>
+
+    <td id='Row7Column2' >
+
+
+<a name="wp18391"></a><p class="pTableCell">
+The last number in the sequence (see <a href="majicconfig12.html#wp18385"  onclick='oT("CRF","majicconfig12.html#wp18385");return false;'>first</a>).</p></td>
+
+
+</tr>
+
+  <tr align="left" valign="top">
+    <td id='Row8Column1' >
+
+
+<a name="wp18393"></a><p class="pTableCell">
+<span class=" cItalic">obj_inc</span></p></td>
+
+    <td id='Row8Column2' >
+
+
+<a name="wp18395"></a><p class="pTableCell">
+Decimal number giving the &quot;stride&quot;. </p>
+<a name="wp18508"></a><p class="pTableCell">
+It is normally <span class=" cItalic">1</span>, but can be set to a higher value when the registers in the sequence are actually addressed as every Nth register in the space.</p>
+<a name="wp18507"></a><p class="pTableCell">
+For each register in the sequence, the amount added to the offset to form the address is the register sequence number <span class=" cItalic">* byte_size</span>.</p></td>
+
+
+</tr>
+
+  <tr align="left" valign="top">
+    <td id='Row9Column1' >
+
+
+<a name="wp18397"></a><p class="pTableCell">
+<span class=" cItalic">inc</span></p></td>
+
+    <td id='Row9Column2' >
+
+
+<a name="wp18399"></a><p class="pTableCell">
+Decimal number giving the amount by which to increment the register number for each name in the sequence.</p>
+<a name="wp18509"></a><p class="pTableCell">
+If not specified, the default is 1.</p></td>
+
+
+</tr>
+
+
+</table>
+
+</div>
+<div id='EndTable'> </div>
+<p class="pBody">
+<br clear='left' class='Blank4Table' />
+
+<a href="majicconfig12.html#wp18361"  onclick='oT("CRF","majicconfig12.html#wp18361");return false;'>Table&#160;3-4</a> describes the variable definitions.
+</p>
+
+<a name="wp5480"></a><p class="pBody">
+
+For example: You want a sequence of four 8 bit registers mapped to physical memory at <span class=" cBold">0</span>, with each register in the low byte of successive machine words (32 bits). To name these registers <span class=" cItalic">z1</span>, <span class=" cItalic">z3</span>, <span class=" cItalic">z5</span>, etc., the definition syntax is:
+</p>
+
+<a name="wp5481"></a><pre class="pCode">
+REG=z 0x0 MEMORY_P 1 SEQ 1 7 4 2
+
+</pre>
+
+<a name="wp5482"></a><h2 class="pHeading4 FontLevel2" id="MGC5482">
+
+Register Field Definition File Format
+</h2>
+<a name="wp34808"></a><p class="pzShortDesc">
+
+Registers can also be broken down into displayable fields. Any previously defined register or register sequence can be set up as <span class=" cItalic">field encoded</span>. If a field breakdown is provided for a register sequence, the fields apply to every register in the sequence. Fields of more than one bit are displayed as <span class=" cItalic">field_name=hexadecimal_value</span>. One bit fields are displayed as an uppercase or lowercase <span class=" cItalic">field_name</span> where uppercase means a <span class=" cBold">TRUE</span> or <span class=" cBold">1</span> value.
+</p>
+
+<a name="wp5483"></a><pre class="pCode">
+<span class=" cBold">REG_FIELD</span> <span class=" cBold">=</span> <span class=" cItalic">reg_name</span> <span class=" cItalic">field_spec </span><span class=" cBold">[,</span> <span class=" cItalic">field_spec</span><span class=" cBold">]
+</span></pre>
+
+<a name="wp35725"></a><pre class="pCode">
+
+</pre>
+
+<a name="wp36565"></a><p class="pBody">
+
+<a href="majicconfig12.html#wp36132"  onclick='oT("CRF","majicconfig12.html#wp36132");return false;'>Table&#160;3-5</a> shows the REG_FIELD variable descriptions.
+</p>
+
+<a name="wp36566"></a><p class="pBody">
+
+<span class=" cBold">Additional Notes:</span>
+</p>
+
+<a name="wp36567"></a>
+<ul><li class="LL1BulSolid">Long REG_FIELD definitions can be continued on more than one line. If a line ends with a comma, list item processing continues on the next line.</li></ul>
+
+<a name="wp36568"></a>
+<ul><li class="LL1BulSolid">Include files are supported to allow common processor elements to be placed in one file. The <span class=" cCourier cP10">INCLUDE</span> command begins reading from the referenced file and returns to the calling file when done. Nested include files are allowed.</li></ul>
+
+<a name="wp36569"></a><pre class="pCodeIndent">
+INCLUDE &ldquo;<span class=" cItalic">filename</span>&rdquo;
+</pre>
+<a name="wp36554"></a><pre class="pCode">
+
+</pre>
+
+<a name="wp36165"></a><p class="pBody">
+
+
+</p>
+<div id="TableDivQz"></div>
+<div align="center">
+
+
+<a name="wp36132"></a><p class="pTableTitle" id="MGC36132">
+
+Table 3-5. <a name="CRefID52460"></a>
+REG_FIELD Variables&#160;
+</p>
+
+
+<table border="1" cellpadding="5" cellspacing="0" id="wp36132table36124">
+  <tr bgcolor="#CCCCCC"  align="center" valign="middle">
+    <th>
+
+<a name="wp36136"></a><p class="pTableHeading" id="MGC36132">
+Variable Name
+</p>
+</th>
+
+    <th>
+
+<a name="wp36138"></a><p class="pTableHeading">
+
+Definition
+</p>
+</th>
+
+
+</tr>
+
+  <tr align="left" valign="top">
+    <td id='Row2Column1'  style='width:1.19444in'>
+
+
+<a name="wp36140"></a><p class="pTableCell">
+<span class=" cItalic">reg_name</span></p></td>
+
+    <td id='Row2Column2'  style='width:4.08334in'>
+
+
+<a name="wp36142"></a><p class="pTableCell">
+The name previously defined through a REG statement.</p>
+<a name="wp36143"></a><p class="pTableCell">
+Note that for sequence registers a full sequence register name must be given (including the number).</p></td>
+
+
+</tr>
+
+  <tr align="left" valign="top">
+    <td id='Row3Column1' >
+
+
+<a name="wp36145"></a><p class="pTableCell">
+<span class=" cItalic">field_spec</span></p></td>
+
+    <td id='Row3Column2' >
+
+
+<a name="wp36147"></a><p class="pTableCell">
+field_name high_bit low_bit [, field_spec]</p></td>
+
+
+</tr>
+
+  <tr align="left" valign="top">
+    <td id='Row4Column1' >
+
+
+<a name="wp36149"></a><p class="pTableCell">
+<span class=" cItalic">field_name</span></p></td>
+
+    <td id='Row4Column2' >
+
+
+<a name="wp36151"></a><p class="pTableCell">
+An ident providing the name of the field.</p></td>
+
+
+</tr>
+
+  <tr align="left" valign="top">
+    <td id='Row5Column1' >
+
+
+<a name="wp36153"></a><p class="pTableCell">
+<span class=" cItalic">high_bit</span></p></td>
+
+    <td id='Row5Column2' >
+
+
+<a name="wp36155"></a><p class="pTableCell">
+A decimal number in the bit range of the given register.</p>
+<a name="wp36156"></a><p class="pTableCell">
+Must be &gt;= low_bit.</p></td>
+
+
+</tr>
+
+  <tr align="left" valign="top">
+    <td id='Row6Column1' >
+
+
+<a name="wp36158"></a><p class="pTableCell">
+<span class=" cItalic">low_bit</span></p></td>
+
+    <td id='Row6Column2' >
+
+
+<a name="wp36160"></a><p class="pTableCell">
+A decimal number in the bit range of the given register.</p>
+<a name="wp36161"></a><p class="pTableCell">
+Must be &lt;= high_bit.</p></td>
+
+
+</tr>
+
+
+</table>
+
+</div>
+<div id='EndTable'> </div>
+<p class="pBody">
+<br clear='left' class='Blank4Table' />
+
+
+</p>
+
+<a name="wp36783"></a><h2 class="pHeading4 FontLevel2" id="MGC36783">
+
+
+Sample Register Definition file
+</h2>
+<a name="wp36784"></a><p class="pzShortDesc">
+
+The following example demonstrates a definition for some memory-mapped registers (common in hardware designs).
+</p>
+
+<a name="wp36785"></a><pre class="pCode">
+// Define a register named &#39;dev_a_ctrl&#39; and associate its address, space, 
+and size
+</pre>
+
+<a name="wp36786"></a><pre class="pCode">
+REG       = dev_a_ctrl  0xFF00A000 PHYSICAL 4
+</pre>
+
+<a name="wp36787"></a><pre class="pCode">
+
+</pre>
+
+<a name="wp36788"></a><pre class="pCode">
+// Define the names and bit positions of fields within the &#39;dev_a_ctrl&#39; 
+register
+</pre>
+
+<a name="wp36789"></a><pre class="pCode">
+REG_FIELD = dev_a_ctrl  status 2 0, lock 3 3
+</pre>
+
+<a name="wp36790"></a><pre class="pCode">
+
+</pre>
+
+<a name="wp36791"></a><pre class="pCode">
+// Define additional registers
+</pre>
+
+<a name="wp36792"></a><pre class="pCode">
+REG = dev_a_data1 0xFF00A004 MEMORY 4
+</pre>
+
+<a name="wp36793"></a><pre class="pCode">
+REG = dev_a_data2 0xFF00A008 MEMORY 4
+</pre>
+
+<a name="wp36794"></a><pre class="pCode">
+
+</pre>
+
+<a name="wp36795"></a><pre class="pCode">
+// &lt;eof&gt;
+</pre>
+
+<a name="wp36796"></a><pre class="pCode">
+
+</pre>
+
+
+
+
+
+</div>
+<!--BeginFooterContent-->
+<div class="BlankFooter" id="BlankFooter">&nbsp;</div>
+<div class="Footer" id="Footer">&nbsp;</div>
+<script type="text/javascript" language="JavaScript1.2">
+<!--
+   DocHandle = "mesp_user";
+   DocTitle = "Mentor Embedded Sourcery Probe User's Manual";
+   PageTitle = "Register Definition File Format";
+   Copyright = "2011-2015";
+   PDFLinkTitle = "Register.Definition.File.Format"
+   ThisTopic = "RegisterDefinitionFileFormat";
+   CurrentFile = "majicconfig12.html";
+   CurrentFileID = "22";
+      topicFooter();
+
+ // -->
+ </script>
+ 
+ <noscript>
+    <p class="MGCFooter">Mentor Embedded Sourcery Probe User's Manual&nbsp;2.5.0
+    <br />2011-2015&#169;&nbsp;Mentor Graphics Corporation. All rights reserved.
+    <br /><a href='../mgc_html_help/nsmgchelp.htm' target="_blank">Browser Requirements</a></p>
+ </noscript>
+
+    </div>
+  </body>
+</html>
+
+ 

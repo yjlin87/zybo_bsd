@@ -1,0 +1,45 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Aug 30 16:24:57 2017
+# Process ID: 32461
+# Current directory: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj
+# Command line: vivado /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.xpr
+# Log file: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/vivado.log
+# Journal file: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.xpr
+INFO: [Project 1-313] Project file moved from '/mnt/workspace/znsoc/Projects/zybo_base_system/zybo_bsd/proj' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/workspace/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 5904.566 ; gain = 139.535 ; free physical = 146 ; free virtual = 14291
+open_bd_design {/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/system.bd}
+Adding cell -- Digilent:digilent:axi_dispctrl:1.0 - axi_dispctrl_0
+Adding cell -- Digilent:digilent:axi_dispctrl:1.0 - axi_dispctrl_1
+Adding cell -- analogdeviceinc.com:adi:axi_i2s_adi:1.0 - axi_i2s_adi_1
+Adding cell -- digilentinc.com:digilent:hdmi_tx:1.0 - hdmi_tx_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - BTNs_4Bits
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - LEDs_4Bits
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - SWs_4Bits
+Adding cell -- xilinx.com:ip:axi_vdma:6.2 - axi_vdma_0
+Adding cell -- xilinx.com:ip:axi_vdma:6.2 - axi_vdma_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - ground
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - vdd
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_150M
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK2(clk) and /axi_i2s_adi_1/DATA_CLK_I(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file </mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 6255.980 ; gain = 338.812 ; free physical = 204 ; free virtual = 14245
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 30 16:28:38 2017...

@@ -1,0 +1,105 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Aug 30 19:20:38 2017
+# Process ID: 29385
+# Current directory: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj
+# Command line: vivado /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.xpr
+# Log file: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/vivado.log
+# Journal file: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.xpr
+INFO: [Project 1-313] Project file moved from '/mnt/workspace/znsoc/Projects/zybo_base_system/zybo_bsd/proj' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/mnt/workspace/Xilinx/Vivado/2016.4/data/ip'.
+open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 5892.434 ; gain = 140.000 ; free physical = 2674 ; free virtual = 17804
+open_bd_design {/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/system.bd}
+Adding cell -- Digilent:digilent:axi_dispctrl:1.0 - axi_dispctrl_0
+Adding cell -- Digilent:digilent:axi_dispctrl:1.0 - axi_dispctrl_1
+Adding cell -- analogdeviceinc.com:adi:axi_i2s_adi:1.0 - axi_i2s_adi_1
+Adding cell -- digilentinc.com:digilent:hdmi_tx:1.0 - hdmi_tx_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - BTNs_4Bits
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - LEDs_4Bits
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - SWs_4Bits
+Adding cell -- xilinx.com:ip:axi_vdma:6.2 - axi_vdma_0
+Adding cell -- xilinx.com:ip:axi_vdma:6.2 - axi_vdma_1
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - ground
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - vdd
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_150M
+WARNING: [BD 41-1731] Type mismatch between connected pins: /processing_system7_0/FCLK_CLK2(clk) and /axi_i2s_adi_1/DATA_CLK_I(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file </mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/system.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:25 . Memory (MB): peak = 6239.938 ; gain = 345.531 ; free physical = 2317 ; free virtual = 17692
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Aug 30 19:23:29 2017] Launched system_xlconstant_0_2_synth_1, system_xbar_2_synth_1, system_rst_ps7_0_100M_3_synth_1, system_xbar_3_synth_1, system_rst_ps7_0_150M_3_synth_1, system_auto_pc_2_synth_1, system_vdd_1_synth_1, system_auto_pc_1_synth_1, system_hdmi_tx_0_0_synth_1, system_axi_vdma_0_0_synth_1, system_processing_system7_0_0_synth_1, system_axi_dispctrl_0_0_synth_1, system_axi_dispctrl_1_1_synth_1, system_SWs_4Bits_2_synth_1, system_ground_0_synth_1, system_axi_i2s_adi_1_0_synth_1, system_axi_vdma_1_1_synth_1, system_LEDs_4Bits_1_synth_1, system_BTNs_4Bits_0_synth_1, synth_1...
+Run output will be captured here:
+system_xlconstant_0_2_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_xlconstant_0_2_synth_1/runme.log
+system_xbar_2_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_xbar_2_synth_1/runme.log
+system_rst_ps7_0_100M_3_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_rst_ps7_0_100M_3_synth_1/runme.log
+system_xbar_3_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_xbar_3_synth_1/runme.log
+system_rst_ps7_0_150M_3_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_rst_ps7_0_150M_3_synth_1/runme.log
+system_auto_pc_2_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_auto_pc_2_synth_1/runme.log
+system_vdd_1_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_vdd_1_synth_1/runme.log
+system_auto_pc_1_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_auto_pc_1_synth_1/runme.log
+system_hdmi_tx_0_0_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_hdmi_tx_0_0_synth_1/runme.log
+system_axi_vdma_0_0_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_axi_vdma_0_0_synth_1/runme.log
+system_processing_system7_0_0_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_processing_system7_0_0_synth_1/runme.log
+system_axi_dispctrl_0_0_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_axi_dispctrl_0_0_synth_1/runme.log
+system_axi_dispctrl_1_1_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_axi_dispctrl_1_1_synth_1/runme.log
+system_SWs_4Bits_2_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_SWs_4Bits_2_synth_1/runme.log
+system_ground_0_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_ground_0_synth_1/runme.log
+system_axi_i2s_adi_1_0_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_axi_i2s_adi_1_0_synth_1/runme.log
+system_axi_vdma_1_1_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_axi_vdma_1_1_synth_1/runme.log
+system_LEDs_4Bits_1_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_LEDs_4Bits_1_synth_1/runme.log
+system_BTNs_4Bits_0_synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/system_BTNs_4Bits_0_synth_1/runme.log
+synth_1: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/synth_1/runme.log
+[Wed Aug 30 19:23:31 2017] Launched impl_1...
+Run output will be captured here: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 195 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2016.4
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/.Xil/Vivado-29385-linux-2fny.suse/dcp/system_wrapper_early.xdc]
+Finished Parsing XDC File [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/.Xil/Vivado-29385-linux-2fny.suse/dcp/system_wrapper_early.xdc]
+Parsing XDC File [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/.Xil/Vivado-29385-linux-2fny.suse/dcp/system_wrapper.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/constraints/base.xdc:90]
+INFO: [Timing 38-2] Deriving generated clocks [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/constraints/base.xdc:90]
+get_clocks: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 6794.688 ; gain = 504.527 ; free physical = 3181 ; free virtual = 16907
+Finished Parsing XDC File [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/.Xil/Vivado-29385-linux-2fny.suse/dcp/system_wrapper.xdc]
+Parsing XDC File [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/.Xil/Vivado-29385-linux-2fny.suse/dcp/system_wrapper_late.xdc]
+Finished Parsing XDC File [/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/.Xil/Vivado-29385-linux-2fny.suse/dcp/system_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.81 . Memory (MB): peak = 6809.684 ; gain = 8.000 ; free physical = 3165 ; free virtual = 16891
+Restored from archive | CPU: 0.570000 secs | Memory: 14.299324 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.55 ; elapsed = 00:00:00.81 . Memory (MB): peak = 6809.684 ; gain = 8.000 ; free physical = 3165 ; free virtual = 16891
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 15 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  RAM32M => RAM32M (RAMS32, RAMS32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32): 12 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+open_run: Time (s): cpu = 00:00:27 ; elapsed = 00:00:19 . Memory (MB): peak = 6980.059 ; gain = 740.121 ; free physical = 3063 ; free virtual = 16771
+file mkdir /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.sdk
+file copy -force /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.runs/impl_1/system_wrapper.sysdef /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.sdk/system_wrapper.hdf
+
+launch_sdk -workspace /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.sdk -hwspec /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.sdk/system_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.sdk -hwspec /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.sdk/system_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Aug 30 19:51:59 2017...

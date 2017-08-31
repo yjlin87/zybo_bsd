@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Aug 30 15:51:03 2017
+# Process ID: 31458
+# Current directory: /mnt/workspace/znsoc/Projects/zybo_base_system/zybo_bsd/proj
+# Command line: vivado -source create_project.tcl
+# Log file: /mnt/workspace/znsoc/Projects/zybo_base_system/zybo_bsd/proj/vivado.log
+# Journal file: /mnt/workspace/znsoc/Projects/zybo_base_system/zybo_bsd/proj/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source create_project.tcl

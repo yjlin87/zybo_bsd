@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1733598 on Wed Dec 14 22:35:42 MST 2016
+# IP Build 1731160 on Wed Dec 14 23:47:21 MST 2016
+# Start of session at: Wed Aug 30 16:24:57 2017
+# Process ID: 32461
+# Current directory: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj
+# Command line: vivado /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.xpr
+# Log file: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/vivado.log
+# Journal file: /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/proj/zybo_bsd.xpr
+open_bd_design {/mnt/workspace/znsoc/Projects/zybo_bsd/sources/hardware/src/bd/system/system.bd}
